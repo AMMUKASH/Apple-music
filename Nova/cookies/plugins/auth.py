@@ -1,14 +1,14 @@
-# Copyright (c) 2025 AnonymousX1025
+# Copyright (c) 2025 CoderNova
 # Licensed under the MIT License.
-# This file is part of AnonXMusic
+# This file is part of Nova
 
 
 import time
 
 from pyrogram import filters, types
 
-from anony import app, db, lang
-from anony.helpers import admin_check, is_admin, utils
+from nova import app, db, lang
+from nova.helpers import admin_check, is_admin, utils
 
 
 @app.on_message(filters.command(["auth", "unauth"]) & filters.group & ~app.bl_users)
