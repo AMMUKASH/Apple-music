@@ -1,12 +1,12 @@
-# Copyright (c) 2025 AnonymousX1025
+# Copyright (c) 2025 CoderNova
 # Licensed under the MIT License.
-# This file is part of AnonXMusic
+# This file is part of Nova
 
 
 from pyrogram import filters, types
 
-from anony import app, db, lang
-from anony.helpers import admin_check, buttons
+from nova import app, db, lang
+from nova.helpers import admin_check, buttons
 
 
 @app.on_message(filters.command(["lang", "language"]) & ~app.bl_users)
