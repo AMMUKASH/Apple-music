@@ -1,12 +1,12 @@
-# Copyright (c) 2025 AnonymousX1025
+# Copyright (c) 2025 CoderNova
 # Licensed under the MIT License.
-# This file is part of AnonXMusic
+# This file is part of Nova
 
 
 from pyrogram import filters, types
 
-from anony import anon, app, db, lang
-from anony.helpers import can_manage_vc
+from nova import anon, app, db, lang
+from nova.helpers import can_manage_vc
 
 
 @app.on_message(filters.command(["end", "stop"]) & filters.group & ~app.bl_users)
