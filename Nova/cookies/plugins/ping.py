@@ -1,14 +1,14 @@
-# Copyright (c) 2025 AnonymousX1025
+# Copyright (c) 2025 CoderNova
 # Licensed under the MIT License.
-# This file is part of AnonXMusic
+# This file is part of Nova
 
 
 import time
 import psutil
 
 from pyrogram import filters, types
-from anony import app, anon, boot, config, lang
-from anony.helpers import buttons
+from nova import app, anon, boot, config, lang
+from nova.helpers import buttons
 
 
 @app.on_message(filters.command(["alive", "ping"]) & ~app.bl_users)
