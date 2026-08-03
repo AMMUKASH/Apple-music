@@ -5,7 +5,7 @@
 
 from pyrogram import Client
 
-from anony import config, logger
+from nova import config, logger
 
 
 class Userbot(Client):
@@ -19,7 +19,7 @@ class Userbot(Client):
         self.clients = []
         clients = {"one": "SESSION1", "two": "SESSION2", "three": "SESSION3"}
         for key, string_key in clients.items():
-            name = f"NovaUB{key[-1]}"
+            name = f"novaUB{key[-1]}"
             session = getattr(config, string_key)
             setattr(
                 self,
