@@ -1,6 +1,6 @@
-# Copyright (c) 2025 AnonymousX1025
+# Copyright (c) 2025 CoderNova
 # Licensed under the MIT License.
-# This file is part of AnonXMusic
+# This file is part of Nova
 
 
 import time
@@ -34,23 +34,23 @@ config.check()
 tasks = []
 boot = time.time()
 
-from anony.core.bot import Bot
+from nova import Bot
 app = Bot()
 
-from anony.core.dir import ensure_dirs
+from nova.core.dir import ensure_dirs
 ensure_dirs()
 
-from anony.core.userbot import Userbot
+from nova.core.userbot import Userbot
 userbot = Userbot()
 
-from anony.core.mongo import MongoDB
+from nova.core.mongo import MongoDB
 db = MongoDB()
 
-from anony.core.lang import Language
+from nova.core.lang import Language
 lang = Language()
 
-from anony.core.telegram import Telegram
-from anony.core.youtube import YouTube
+from nova.core.telegram import Telegram
+from nova.core.youtube import YouTube
 tg = Telegram()
 yt = YouTube()
 
