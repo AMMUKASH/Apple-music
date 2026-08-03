@@ -1,6 +1,7 @@
-# Copyright (c) 2025 AnonymousX1025
+# Copyright (c) 2025 CoderNova
 # Licensed under the MIT License.
-# This file is part of AnonXMusic
+# This file is part of Nova
+
 
 
 import os
@@ -13,8 +14,8 @@ from pathlib import Path
 
 from py_yt import Playlist, VideosSearch
 
-from anony import logger
-from anony.helpers import Track, utils
+from nova import logger
+from nova.helpers import Track, utils
 
 
 class YouTube:
