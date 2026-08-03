@@ -11,9 +11,9 @@ from pyrogram.types import InputMediaPhoto, Message
 from pytgcalls import PyTgCalls, exceptions, types
 from pytgcalls.pytgcalls_session import PyTgCallsSession
 
-from anony import (app, config, db, lang, logger,
+from nova import (app, config, db, lang, logger,
                    queue, thumb, userbot, yt)
-from anony.helpers import Media, Track, buttons
+from nova.helpers import Media, Track, buttons
 
 
 class TgCall(PyTgCalls):
@@ -206,3 +206,4 @@ class TgCall(PyTgCalls):
             await self.decorators(client)
         logger.info("PyTgCalls client(s) started.")
 
+       
