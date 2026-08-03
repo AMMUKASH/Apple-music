@@ -1,1 +1,1 @@
-worker: python3 -m nova
+worker: bash start
