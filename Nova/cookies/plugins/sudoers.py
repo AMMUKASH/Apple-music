@@ -1,12 +1,12 @@
-# Copyright (c) 2025 AnonymousX1025
+# Copyright (c) 2025 CoderNova
 # Licensed under the MIT License.
-# This file is part of AnonXMusic
+# This file is part of Nova
 
 
 from pyrogram import filters, types
 
-from anony import app, db, lang
-from anony.helpers import utils
+from nova import app, db, lang
+from nova.helpers import utils
 
 
 @app.on_message(filters.command(["addsudo", "delsudo", "rmsudo"]) & filters.user(app.owner))
