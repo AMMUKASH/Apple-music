@@ -14,8 +14,8 @@ from typing import Any, Optional, Tuple
 
 from pyrogram import filters, types
 
-from anony import anon, app, config, db, lang, userbot
-from anony.helpers import format_exception, meval
+from nova import anon, app, config, db, lang, userbot
+from nova.helpers import format_exception, meval
 
 
 @app.on_message(filters.command(["eval", "exec"]) & filters.user(app.owner))
