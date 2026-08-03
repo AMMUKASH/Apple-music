@@ -3,13 +3,12 @@
 # This file is part of Nova
 
 
-
 from random import randint
 from time import time
 
 from pymongo import AsyncMongoClient
 
-from anony import config, logger, userbot
+from nova import config, logger, userbot
 
 
 class MongoDB:
@@ -80,7 +79,7 @@ class MongoDB:
         return bool(self.active_calls.get(chat_id, 0))
 
     async def get_admins(self, chat_id: int, reload: bool = False) -> list[int]:
-        from anony.helpers._admins import reload_admins
+        from nova.helpers._admins import reload_admins
 
         if chat_id not in self.admin_list or reload:
             self.admin_list[chat_id] = await reload_admins(chat_id)
@@ -130,7 +129,7 @@ class MongoDB:
         return num
 
     async def get_assistant(self, chat_id: int):
-        from anony import anon
+        from nova import anon
 
         if chat_id not in self.assistant:
             doc = await self.assistantdb.find_one({"_id": chat_id})
@@ -368,4 +367,3 @@ class MongoDB:
         await self.get_blacklisted(True)
         await self.get_logger()
         logger.info("Database cache loaded.")
-
