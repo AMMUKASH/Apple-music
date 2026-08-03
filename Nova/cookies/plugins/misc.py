@@ -1,6 +1,6 @@
-# Copyright (c) 2025 AnonymousX1025
+# Copyright (c) 2025 CoderNova
 # Licensed under the MIT License.
-# This file is part of AnonXMusic
+# This file is part of Nova
 
 
 import time
@@ -8,8 +8,8 @@ import asyncio
 
 from pyrogram import enums, errors, filters, types
 
-from anony import anon, app, config, db, lang, queue, tasks, userbot, yt
-from anony.helpers import buttons
+from nova import anon, app, config, db, lang, queue, tasks, userbot, yt
+from nova.helpers import buttons
 
 
 @app.on_message(filters.video_chat_started, group=19)
