@@ -1,15 +1,15 @@
-# Copyright (c) 2025 AnonymousX1025
+# Copyright (c) 2025 CoderNova
 # Licensed under the MIT License.
-# This file is part of AnonXMusic
+# This file is part of Nova
 
 
 from pathlib import Path
 
 from pyrogram import filters, types
 
-from anony import anon, app, config, db, lang, queue, tg, yt
-from anony.helpers import buttons, utils
-from anony.helpers._play import checkUB
+from nova import anon, app, config, db, lang, queue, tg, yt
+from nova.helpers import buttons, utils
+from nova.helpers._play import checkUB
 
 
 def playlist_to_queue(chat_id: int, tracks: list) -> str:
