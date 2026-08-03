@@ -1,14 +1,14 @@
-# Copyright (c) 2025 AnonymousX1025
+# Copyright (c) 2025 CoderNova
 # Licensed under the MIT License.
-# This file is part of AnonXMusic
+# This file is part of Nova
 
 
 import re
 
 from pyrogram import errors, filters, types
 
-from anony import anon, app, db, lang, queue, tg, yt
-from anony.helpers import admin_check, buttons, can_manage_vc
+from noca import anon, app, db, lang, queue, tg, yt
+from nova.helpers import admin_check, buttons, can_manage_vc
 
 
 @app.on_callback_query(filters.regex("cancel_dl") & ~app.bl_users)
