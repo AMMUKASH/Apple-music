@@ -1,12 +1,12 @@
-# Copyright (c) 2025 AnonymousX1025
+# Copyright (c) 2025 CoderNova
 # Licensed under the MIT License.
-# This file is part of AnonXMusic
+# This file is part of Nova
 
 
 from pyrogram import filters, types
 
-from anony import app, config, db, lang, queue, thumb
-from anony.helpers import Track, buttons
+from nova import app, config, db, lang, queue, thumb
+from nova.helpers import Track, buttons
 
 
 @app.on_message(filters.command(["queue", "playing"]) & filters.group & ~app.bl_users)
