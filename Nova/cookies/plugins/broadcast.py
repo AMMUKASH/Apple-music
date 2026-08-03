@@ -1,6 +1,6 @@
-# Copyright (c) 2025 AnonymousX1025
+# Copyright (c) 2025 coderNova
 # Licensed under the MIT License.
-# This file is part of AnonXMusic
+# This file is part of nova
 
 
 import os
@@ -8,7 +8,7 @@ import asyncio
 
 from pyrogram import errors, filters, types
 
-from anony import app, db, lang
+from nova import app, db, lang
 
 
 broadcasting = asyncio.Lock()
