@@ -1,6 +1,6 @@
-# Copyright (c) 2025 AnonymousX1025
+# Copyright (c) 2025 CoderNova
 # Licensed under the MIT License.
-# This file is part of AnonXMusic
+# This file is part of Nova
 
 
 import os
@@ -11,8 +11,8 @@ import psutil
 from pyrogram import __version__, filters, types
 from pytgcalls import __version__ as pytgver
 
-from anony import app, config, db, lang, userbot
-from anony.plugins import all_modules
+from nova import app, config, db, lang, userbot
+from nova.plugins import all_modules
 
 
 @app.on_message(filters.command(["stats"]) & filters.group & ~app.bl_users)
