@@ -5,7 +5,7 @@
 
 import pyrogram
 
-from anony import config, logger
+from nova import config, logger
 
 
 class Bot(pyrogram.Client):
