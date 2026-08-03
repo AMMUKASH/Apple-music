@@ -40,7 +40,7 @@ class Config:
         ]
         self.DEFAULT_THUMB = getenv("DEFAULT_THUMB", "https://graph.org/file/957435c81786a34674d2b-83ee390e1331282c72.jpg")
         self.PING_IMG = getenv("PING_IMG", "https://graph.org/file/4e9bff333fb061ad2955d-563fecb9d74f890df6.png")
-        self.START_IMG = getenv("START_IMG", "https://graph.org/vTelegraphBot-08-03-86")
+        self.START_IMG = getenv("START_IMG", "https://files.catbox.moe/61oqva.jpg")
 
     def check(self):
         missing = [
