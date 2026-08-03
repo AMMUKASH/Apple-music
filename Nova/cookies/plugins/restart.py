@@ -1,6 +1,6 @@
-# Copyright (c) 2025 AnonymousX1025
+# Copyright (c) 2025 CoderNova
 # Licensed under the MIT License.
-# This file is part of AnonXMusic
+# This file is part of Nova
 
 
 import os
@@ -10,7 +10,7 @@ import asyncio
 
 from pyrogram import filters, types
 
-from anony import app, db, lang, stop
+from nova import app, db, lang, stop
 
 
 @app.on_message(filters.command(["logs"]) & app.sudoers)
@@ -58,4 +58,4 @@ async def _restart(_, m: types.Message):
     try: os.remove("log.txt")
     except Exception: pass
 
-    os.execl(sys.executable, sys.executable, "-m", "anony")
+    os.execl(sys.executable, sys.executable, "-m", "nova")
