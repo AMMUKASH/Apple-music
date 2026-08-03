@@ -1,6 +1,6 @@
-# Copyright (c) 2025 AnonymousX1025
+# Copyright (c) 2025 CoderNova
 # Licensed under the MIT License.
-# This file is part of AnonXMusic
+# This file is part of Nova
 
 
 import asyncio
@@ -8,9 +8,9 @@ import signal
 import importlib
 from contextlib import suppress
 
-from anony import (anon, app, config, db, logger,
+from nova import (anon, app, config, db, logger,
                    stop, thumb, userbot, yt)
-from anony.plugins import all_modules
+from nova.plugins import all_modules
 
 
 async def idle():
