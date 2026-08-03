@@ -1,1 +1,1 @@
-worker: python3 -m Nova
+worker: python3 -m nova
