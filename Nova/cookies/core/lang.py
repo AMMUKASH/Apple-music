@@ -9,7 +9,7 @@ from pathlib import Path
 
 from pyrogram import errors
 
-from anony import db, logger
+from nova import db, logger
 
 lang_codes = {
     "ar": "العربية",
@@ -35,7 +35,7 @@ class Language:
 
     def __init__(self):
         self.lang_codes = lang_codes
-        self.lang_dir = Path("anony/locales")
+        self.lang_dir = Path("nova/locales")
         self.languages = self.load_files()
 
     def load_files(self):
@@ -99,4 +99,3 @@ class Language:
             return wrapper
 
         return decorator
-
