@@ -1,13 +1,13 @@
-# Copyright (c) 2025 AnonymousX1025
+# Copyright (c) 2025 CoderNova
 # Licensed under the MIT License.
-# This file is part of AnonXMusic
+# This file is part of Nova
 
 
 from py_yt import VideosSearch
 from pyrogram import types
 
-from anony import app
-from anony.helpers import buttons
+from nova import app
+from nova.helpers import buttons
 
 
 @app.on_inline_query(~app.bl_users)
