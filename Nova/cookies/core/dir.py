@@ -2,11 +2,10 @@
 # Licensed under the MIT License.
 # This file is part of Nova
 
-
 import shutil
 from pathlib import Path
 
-from anony import logger
+from nova import logger
 
 
 def ensure_dirs():
