@@ -9,8 +9,8 @@ import time
 
 from pyrogram import types
 
-from anony import config
-from anony.helpers import Media, buttons, utils
+from nova import config
+from nova.helpers import Media, buttons, utils
 
 
 class Telegram:
@@ -132,4 +132,3 @@ class Telegram:
             title="M3U8 Stream",
             video=video,
         )
-
