@@ -1,15 +1,14 @@
-# Copyright (c) 2025 AnonymousX1025
+# Copyright (c) 2025 CoderNova
 # Licensed under the MIT License.
-# This file is part of AnonXMusic
-
+# This file is part of Nova
 
 import os
 import aiohttp
 from PIL import (Image, ImageDraw, ImageEnhance,
                  ImageFilter, ImageFont, ImageOps)
 
-from anony import config
-from anony.helpers import Track
+from nova import config
+from nova.helpers import Track
 
 
 class Thumbnail:
