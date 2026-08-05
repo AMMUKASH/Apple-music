@@ -1,14 +1,14 @@
-# Copyright (c) 2025 AnonymousX1025
+# Copyright (c) 2025 CoderNova
 # Licensed under the MIT License.
-# This file is part of AnonXMusic
+# This file is part of Nova
 
 
 import asyncio
 
 from pyrogram import enums, errors, types
 
-from anony import app, config, db, logger, queue, yt
-from anony.helpers import utils
+from nova import app, config, db, logger, queue, yt
+from nova.helpers import utils
 
 
 def checkUB(play):
