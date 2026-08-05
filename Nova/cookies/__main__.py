@@ -30,7 +30,7 @@ async def main():
     await thumb.start()
 
     for module in all_modules:
-        importlib.import_module(f"anony.plugins.{module}")
+        importlib.import_module(f"nova.plugins.{module}")
     logger.info(f"Loaded {len(all_modules)} modules.")
 
     if config.COOKIES_URL:
