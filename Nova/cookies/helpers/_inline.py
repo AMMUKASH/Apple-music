@@ -1,12 +1,11 @@
-# Copyright (c) 2025 AnonymousX1025
+# Copyright (c) 2025 CoderNova
 # Licensed under the MIT License.
-# This file is part of AnonXMusic
-
+# This file is part of Nova
 
 from pyrogram import types
 
-from anony import app, config, lang
-from anony.core.lang import lang_codes
+from nova import app, config, lang
+from nova.core.lang import lang_codes
 
 
 class Inline:
@@ -153,7 +152,7 @@ class Inline:
                 [
                     self.ikb(
                         text=lang["source"],
-                        url="https://t.me/Nova_coder",
+                        url="https://github.com/nova.pymousX1025/AnonXMusic",
                     )
                 ]
             ]
