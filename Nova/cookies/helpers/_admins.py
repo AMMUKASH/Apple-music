@@ -1,13 +1,13 @@
-# Copyright (c) 2025 AnonymousX1025
+# Copyright (c) 2025 CoderNova
 # Licensed under the MIT License.
-# This file is part of AnonXMusic
+# This file is part of Nova
 
 
 from functools import wraps
 
 from pyrogram import StopPropagation, enums, types
 
-from anony import app, db
+from nova import app, db
 
 
 def admin_check(func):
