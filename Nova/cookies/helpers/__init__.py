@@ -1,7 +1,6 @@
-# Copyright (c) 2025 AnonymousX1025
+# Copyright (c) 2025 CoderNova
 # Licensed under the MIT License.
-# This file is part of AnonXMusic
-
+# This file is part of Nova
 
 from ._admins import admin_check, can_manage_vc, is_admin, reload_admins
 from ._dataclass import Media, Track
