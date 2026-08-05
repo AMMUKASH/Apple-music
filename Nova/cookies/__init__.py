@@ -54,11 +54,11 @@ from nova.core.youtube import YouTube
 tg = Telegram()
 yt = YouTube()
 
-from anony.helpers import Queue, Thumbnail
+from nova.helpers import Queue, Thumbnail
 queue = Queue()
 thumb = Thumbnail()
 
-from anony.core.calls import TgCall
+from nova.core.calls import TgCall
 anon = TgCall()
 
 
